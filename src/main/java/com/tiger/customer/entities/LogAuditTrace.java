@@ -1,5 +1,6 @@
 package com.tiger.customer.entities;
 
+import com.tiger.cores.entities.CreatedAuditEntity;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;

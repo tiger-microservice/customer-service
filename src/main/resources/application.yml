@@ -9,7 +9,7 @@ spring:
   banner:
     location: tiger-banner.txt
   datasource:
-    url: ${DB_URL}
+    url: ${DBMS_CONNECTION}
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
   jpa:
@@ -18,6 +18,15 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     generate-ddl: true
     show-sql: true
+  kafka:
+    bootstrap-servers: ${KAFKA_CONNECTION:localhost:9092}
+    topic-send-message-inbound: send-message-inbound
+    producer:
+      bootstrap-servers: ${KAFKA_CONNECTION:localhost:9092}
+      properties:
+        acks: all
+        retries: 10
+        retry.backoff.ms: 1000
   profiles:
     active: dev
 

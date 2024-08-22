@@ -6,6 +6,7 @@ import lombok.experimental.FieldDefaults;
 import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.SQLRestriction;
+import com.tiger.cores.entities.SoftDelEntity;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
