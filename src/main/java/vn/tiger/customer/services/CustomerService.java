@@ -2,8 +2,6 @@ package vn.tiger.customer.services;
 
 import com.tiger.cores.exceptions.BusinessLogicException;
 import com.tiger.cores.exceptions.ErrorCode;
-import vn.tiger.customer.entities.Customer;
-import vn.tiger.customer.exceptions.AppErrorCode;
 import vn.tiger.customer.repositories.CustomerRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
@@ -21,8 +19,7 @@ public class CustomerService {
     final CustomerRepository customerRepository;
 
     public Object getProfile(UUID customerId) {
-        Customer customer = customerRepository.findById(customerId)
+        return customerRepository.findById(customerId)
                 .orElseThrow(() -> new BusinessLogicException(ErrorCode.RESOURCE_NOT_FOUND));
-        return customer;
     }
 }
