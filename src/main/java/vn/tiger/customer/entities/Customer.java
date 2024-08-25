@@ -8,6 +8,7 @@ import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.SQLRestriction;
 
+import java.time.LocalDate;
 import java.util.UUID;
 
 @Getter
@@ -34,6 +35,8 @@ public class Customer extends SoftDelEntity {
     String email;
     @Column(name = "address")
     String address;
+    @Column(name = "dob")
+    LocalDate dob;
     @Column(name = "department_id")
     UUID departmentId;
 }
