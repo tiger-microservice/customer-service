@@ -20,6 +20,8 @@
 		<protobuf.version>3.17.3</protobuf.version>
 		<protobuf-plugin.version>0.6.1</protobuf-plugin.version>
 		<grpc.version>1.59.0</grpc.version>
+		<axon.version>4.10.1</axon.version>
+		<guava-version>33.2.1-jre</guava-version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -27,6 +29,26 @@
 			<artifactId>common-cores</artifactId>
 			<version>1.0.0</version>
 		</dependency>
+
+		<dependency>
+			<groupId>vn.tiger</groupId>
+			<artifactId>saga-common-service</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<!--event driven-->
+		<dependency>
+			<groupId>org.axonframework</groupId>
+			<artifactId>axon-spring-boot-starter</artifactId>
+			<version>${axon.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava-version}</version>
+		</dependency>
+		<!--event driven-->
 
 		<!-- Core gRPC library -->
 		<dependency>
@@ -101,6 +123,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>vn.tiger</groupId>
+			<artifactId>saga-common-service</artifactId>
+			<version>1.0.0</version>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 
