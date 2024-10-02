@@ -2,12 +2,12 @@ package vn.tiger.customer.services;
 
 import com.tiger.cores.exceptions.BusinessLogicException;
 import com.tiger.cores.exceptions.ErrorCode;
-import vn.tiger.customer.repositories.CustomerRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import vn.tiger.customer.repositories.CustomerRepository;
 
 import java.util.UUID;
 

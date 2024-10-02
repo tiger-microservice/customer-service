@@ -1,7 +1,7 @@
 package vn.tiger.customer.repositories;
 
-import vn.tiger.customer.entities.LogAuditTrace;
 import org.springframework.data.jpa.repository.JpaRepository;
+import vn.tiger.customer.entities.LogAuditTrace;
 
 import java.util.UUID;
 

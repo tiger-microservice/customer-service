@@ -2,7 +2,6 @@ package vn.tiger.customer.exceptions;
 
 import com.tiger.cores.exceptions.BaseError;
 import lombok.Getter;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 
 @Getter

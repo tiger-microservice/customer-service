@@ -1,12 +1,12 @@
 package vn.tiger.customer.entities;
 
+import com.tiger.cores.entities.SoftDelEntity;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.SQLRestriction;
-import com.tiger.cores.entities.SoftDelEntity;
 
 import java.util.UUID;
 
