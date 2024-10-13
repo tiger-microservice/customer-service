@@ -10,15 +10,11 @@
 	</parent>
 	<groupId>com.tiger</groupId>
 	<artifactId>customer-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>customer-service</name>
 	<description>Project customer service using spring boot3 with jdk 21</description>
 	<properties>
-		<java.version>21</java.version>
 		<spring-cloud.version>2023.0.1</spring-cloud.version>
-		<springdoc-openapi-webmvc-ui.version>2.5.0</springdoc-openapi-webmvc-ui.version>
-		<protobuf.version>3.17.3</protobuf.version>
-		<protobuf-plugin.version>0.6.1</protobuf-plugin.version>
 		<grpc.version>1.59.0</grpc.version>
 		<axon.version>4.10.1</axon.version>
 		<guava-version>33.2.1-jre</guava-version>
@@ -106,14 +102,6 @@
 			<version>1.0.0</version>
 		</dependency>
 
-		<!--swagger ui-->
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-			<version>${springdoc-openapi-webmvc-ui.version}</version>
-		</dependency>
-		<!--swagger ui-->
-
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -123,12 +111,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>vn.tiger</groupId>
-			<artifactId>saga-common-service</artifactId>
-			<version>1.0.0</version>
-			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 
