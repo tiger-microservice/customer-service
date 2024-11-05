@@ -19,7 +19,6 @@ import java.util.UUID;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Table(name = "department")
 @SQLDelete(sql = "UPDATE department set is_deleted = true where id = ?")
-@SQLRestriction("is_deleted <> true")
 public class Department extends SoftDelEntity {
 
     @Id
