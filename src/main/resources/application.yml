@@ -62,3 +62,19 @@ axon:
       token: your-token-if-required
     ssl:
       enabled: false # Đặt thành true nếu Axon Server yêu cầu SSL
+
+
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
+  endpoint:
+    health:
+      show-details: always
+    prometheus:
+      enabled: true
