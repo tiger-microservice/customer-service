@@ -14,7 +14,6 @@
 	<name>customer-service</name>
 	<description>Project customer service using spring boot3 with jdk 21</description>
 	<properties>
-		<spring-cloud.version>2023.0.1</spring-cloud.version>
 		<grpc.version>1.59.0</grpc.version>
 		<axon.version>4.10.1</axon.version>
 		<guava-version>33.2.1-jre</guava-version>
@@ -113,18 +112,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>${spring-cloud.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 
 	<build>
 		<plugins>
